@@ -16,50 +16,54 @@
 <!-- HERO -->
 
 <div class="hero">
-  <div class="hero-inner">
-    <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
-" alt="Logo Image"></a>
-    <div class="hero-copy">
-      <h1>Short description of Product</h1>
-      <p>A few reasons why this product is worth using, who it's for and why they need it.</p>
+  <div class="container">
+    <div class="container__centered">
+      <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
+  " alt="Logo Image"></a>
+      <div class="hero-copy">
+        <h1>Short description of Product</h1>
+        <p>A few reasons why this product is worth using, who it's for and why they need it.</p>
+      </div>
+      <button>Learn More</button>
     </div>
-    <button>Learn More</button>
   </div>
 </div>
 
 <!-- BULLETS -->
-
-<ul class="bullets">
-  <li class="bullet three-col-bullet">
-    <div class="bullet-icon bullet-icon-1">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2.png
-" alt="">
-    </div>
-    <div class="bullet-content">
-      <h2>This Bullet Title</h2>
-      <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
-      </div>
-  </li>
-  <li class="bullet three-col-bullet">
-    <div class="bullet-icon bullet-icon-2">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3.png" alt="">
-    </div>
-    <div class="bullet-content">
-      <h2>Another Bullet Title</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
-    </div>
-  </li>
-  <li class="bullet three-col-bullet">
-    <div class="bullet-icon bullet-icon-3">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_4.png" alt="">
-    </div>
-    <div class="bullet-content">
-      <h2>Last Bullet Title</h2>
-      <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
-    </div>
-  </li>
-</ul>
-
+<div class="container">
+  <div class="container__centered">
+    <ul class="bullets">
+      <li class="bullet three-col-bullet">
+        <div class="bullet-icon bullet-icon-1">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2.png
+    " alt="">
+        </div>
+        <div class="bullet-content">
+          <h2>This Bullet Title</h2>
+          <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+          </div>
+      </li>
+      <li class="bullet three-col-bullet">
+        <div class="bullet-icon bullet-icon-2">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3.png" alt="">
+        </div>
+        <div class="bullet-content">
+          <h2>Another Bullet Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
+        </div>
+      </li>
+      <li class="bullet three-col-bullet">
+        <div class="bullet-icon bullet-icon-3">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_4.png" alt="">
+        </div>
+        <div class="bullet-content">
+          <h2>Last Bullet Title</h2>
+          <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <?php include("includes/footer.php"); ?>
