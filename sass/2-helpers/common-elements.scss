@@ -1,0 +1,125 @@
+//*****************************************
+//
+// HTML ELEMENTS
+//
+//*****************************************
+
+// This is for older versions of IE
+header,nav,menu,section,article,aside,footer,figure,figcaption {
+  display: block;
+}
+
+section{
+  padding-top: 2em;
+  padding-bottom: 2em;
+  @include outer-container;
+}
+
+article {
+  @extend section;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  // ie8 fix: http://blog.kurtschindler.net/flexible-dynamically-resizing-images-with-css/
+  width: auto\9;
+}
+
+//*****************************************
+//
+// PANELS
+//
+//*****************************************
+
+.panel {
+  background: $light-gray;
+  padding: 1em;
+  margin-bottom: 2em;
+  position: relative;
+	border: 1px solid darken($light-gray, 10);
+}
+
+.panel--footer {
+  background: $light-gray;
+  padding: 1em;
+  margin-bottom: 2em;
+  @include span-columns(8);
+  @include shift(2);
+  @include clearfix;
+  text-align: center;
+}
+
+.panel--solution__role {
+  @extend .panel;
+  padding: 0;
+  border: none;
+  border-bottom: 4px solid $light-gray;
+  position: relative;
+  &:after {
+    font-family: FontAwesome;
+    content: "\f0f0";
+    right: 0;
+    top: 0;
+    padding-top:.35em;
+    padding-right:.5em;
+    position: absolute;
+    color:$key-west;
+    font-size: 2em;
+  }
+  &:hover {
+    border: none;
+    border-bottom: 4px solid darken( $light-gray, 10%);
+    &:after{
+      color: $blueberry;
+    }
+  }
+
+}
+
+//*****************************************
+//
+// PAGE TITLES
+//
+//*****************************************
+
+// .page__title {
+//   margin-top: 0;
+// }
+
+// .page__title--main {
+//   @extend .page__title;
+//   @extend .header-one;
+//   margin: 0;
+// }
+
+// .page__title--center {
+//   @extend .page__title;
+//   display: block;
+//   text-align: center;
+// }
+
+// .page__title__ribbon {
+//   display: inline-block;
+//   width: 4em;
+//   height: 10px;
+//   background-color: $fresh-mint;
+// }
+
+// .page__title__ribbon--black-coconut{
+//   @extend .page__title__ribbon;
+//   background-color: $white;
+// }
+
+// .page__title__ribbon--blueberry{
+//   @extend .page__title__ribbon;
+//   background-color: $blueberry;
+// }
+
+// .border-none {
+//   border: none;
+// }

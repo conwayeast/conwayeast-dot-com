@@ -1,0 +1,193 @@
+//*****************************************
+//
+// PAGE CONTAINERS
+// These styles wrap sections of main content
+//
+//*****************************************
+
+.container {
+  width: 100%;
+  padding: 4em 0;
+  @include clearfix;
+}
+
+.container__centered {
+  @include outer-container;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+//*****************************************
+//
+// LAYOUT CONTAINERS
+//
+//*****************************************
+
+.container__one-quarter {
+  @include span-columns(3);
+}
+
+.container__one-quarter--last {
+  @include span-columns(3);
+  margin-right: 0;
+}
+
+.container__one-half {
+  @include span-columns(6);
+  @include MQ(M) {
+    @include span-columns(12);
+  }
+}
+
+.container__one-half--last {
+  @extend .container__one-half;
+  margin-right: 0;
+}
+
+.container__one-third {
+  @include span-columns(4);
+  @include MQ(S){
+    @include span-columns(12);
+  }
+}
+
+.container__one-third--last {
+  @extend .container__one-third;
+  margin-right: 0;
+}
+
+.container__one-fourth {
+  @include span-columns(3);
+  @include MQ(S){
+    @include span-columns(12);
+  }
+}
+
+.container__one-fourth--last {
+  @extend .container__one-fourth;
+  margin-right: 0;
+}
+
+.container__two-third {
+  @include span-columns(8);
+  @include MQ(S){
+    @include span-columns(12);
+  }
+}
+
+.container__two-third--with-sidebar {
+  @include span-columns(8);
+  padding-right: 1em;
+  @include MQ(M) {
+    @include span-columns(12);
+    padding-right: 0em;
+    margin-bottom: 2em;
+  }
+}
+
+//*****************************************
+//
+// COLORED BACKGROUND CONTAINERS
+//
+//*****************************************
+
+.container--fresh-mint {
+  @extend .container;
+  background-color: $fresh-mint;
+}
+
+.container--black-coconut {
+  @extend .container;
+  background-color: $black-coconut;
+  color: $white;
+}
+
+.container--black-coconut--legal {
+  @extend .container--black-coconut;
+  padding: 1em;
+}
+
+.container--light-gray {
+  @extend .container;
+  background-color: $light-gray;
+}
+
+.container--key-west {
+  @extend .container;
+  background-color: $key-west;
+}
+
+.container--purple {
+  @extend .container;
+  background-color: $purple;
+}
+
+.container--yellow {
+  @extend .container;
+  background-color: $yellow;
+}
+
+//*****************************************
+//
+// CONTAINERS w/ ADJUSTED PADDING
+//
+//*****************************************
+
+.container--nopad {
+  @extend .container;
+  padding: 0;
+}
+
+.container--nopadtop {
+  @extend .container;
+  padding-top: 0;
+}
+
+.container--nopadbottom {
+  width: 100%;
+  padding: 2em 0 0;
+  @include clearfix;
+}
+
+//*****************************************
+//
+// PAGE TITLE CONTAINER
+// This is for the header at the top of the page
+//
+//*****************************************
+
+.container--page-title {
+  background: $light-gray;
+  padding:1em 0;
+}
+
+//*****************************************
+//
+// NEWSLETTER CONTAINER
+//
+//*****************************************
+
+.container__newsletter {
+  text-align:center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  @include MQ(M){
+    width: 97%;
+  }
+}
+
+//*****************************************
+//
+// FORM SEARCH CONTAINER
+//
+//*****************************************
+.container--form__search{
+  @extend .panel;
+  @include MQ(SM){
+    margin-bottom:3em;
+  }
+}
+
+
+
