@@ -6,6 +6,8 @@
   <title></title>
   <link rel="stylesheet" href="css/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//use.typekit.net/cdt3wla.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
 
@@ -16,18 +18,14 @@
 <!-- HERO -->
 
 <div class="hero">
-  <div class="container">
+  <div class="container--nopad">
     <div class="container__centered">
-      <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
-  " alt="Logo Image"></a>
-      <div class="hero-copy">
-        <h1>Short description of Product</h1>
-        <p>A few reasons why this product is worth using, who it's for and why they need it.</p>
-      </div>
-      <button>Learn More</button>
+      <h1 class="hero__title">Front End Development <br> &amp; Graphic Design</h1>
+      <p class="hero__title__subhead">A few reasons why this product is worth using, who it's for and why they need it.</p>
     </div>
   </div>
 </div>
+
 
 <!-- BULLETS -->
 <div class="container">

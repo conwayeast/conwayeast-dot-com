@@ -1,17 +1,19 @@
-<header class="navigation" role="banner">
-<div class="container">
+<header class="container" role="banner">
   <div class="container__centered">
-    <a href="#" class="logo">
-      <img src="img/conwayeast-logo.svg" alt="conwayeast logo">
-    </a>
+    <div class="container__one-half">
+      <a href="#" class="logo__link">
+        <img class="logo__img" src="img/conwayeast-logo.svg" alt="conwayeast logo">
+      </a>
+    </div>
+    <div class="container__one-half--last">
     <a href="#" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
-    <nav role="navigation">
-      <ul id="js-navigation-menu" class="navigation-menu show">
-        <li class="nav-link"><a href="#">Portfolio</a></li>
-        <li class="nav-link"><a href="#">About</a></li>
-        <li class="nav-link"><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="navigation" role="navigation">
+        <ul id="js-navigation-menu" class="navigation__list">
+          <li class="navigation__list--item"><a class="navigation__link" href="#">Portfolio</a></li>
+          <li class="navigation__list--item"><a class="navigation__link" href="#">About</a></li>
+          <li class="navigation__list--item"><a class="navigation__link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
-</div>
 </header>

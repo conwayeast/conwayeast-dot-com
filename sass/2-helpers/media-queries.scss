@@ -15,27 +15,27 @@ $breakpoint-extra-large: 100em;   //1600px
 
 @mixin MQ($canvas) {
   @if $canvas == XS {
-    @media all and (min-width: $breakpoint-extra-small) {
+    @media all and (max-width: $breakpoint-extra-small) {
       @content;
     }
   } @else if $canvas == S {
-    @media all and (min-width: $breakpoint-small) {
+    @media all and (max-width: $breakpoint-small) {
       @content;
     }
   } @else if $canvas == M {
-    @media all and (min-width: $breakpoint-medium) {
+    @media all and (max-width: $breakpoint-medium) {
       @content;
     }
   } @else if $canvas == XM {
-    @media all and (min-width: $breakpoint-extra-medium) {
+    @media all and (max-width: $breakpoint-extra-medium) {
       @content;
     }
   } @else if $canvas == L {
-    @media all and (min-width: $breakpoint-large) {
+    @media all and (max-width: $breakpoint-large) {
       @content;
     }
   } @else if $canvas == XL {
-    @media all and (min-width: $breakpoint-extra-large) {
+    @media all and (max-width: $breakpoint-extra-large) {
       @content;
     }
   }

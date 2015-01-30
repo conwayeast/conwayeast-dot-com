@@ -1,0 +1,46 @@
+.navigation {
+  width: 100%;
+}
+
+.navigation__list {
+  -webkit-transform-style: preserve-3d;
+  clear: both;
+  display: none;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.navigation__list.show {
+  display: block;
+}
+
+.navigation__list--item {
+  display: block;
+  overflow: hidden;
+  padding-right: 0.8em;
+  text-align: right;
+  width: 100%;
+  z-index: 9999;
+}
+
+a {
+  color: #000;
+  display: inline-block;
+  font-weight: 400;
+}
+a:focus, a:hover {
+  color: blue;
+}
+
+.active-nav-item a {
+  border-bottom: 1px solid blue;
+  padding-bottom: 3px;
+}
+
+.navigation-tools {
+  background: #505050;
+  clear: both;
+  display: block;
+}
