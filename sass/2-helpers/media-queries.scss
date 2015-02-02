@@ -1,12 +1,16 @@
-//=My breakpoint variables
+//My breakpoint variables
 //Usually kept in _variables.scss
+//Taken from http://daniel.furzeface.com/blog/my-sass-media-query-mixin/
 
-$breakpoint-extra-small: 20em;    //320px
-$breakpoint-small: 30em;          //480px
-$breakpoint-medium: 50em;         //800px
-$breakpoint-extra-medium: 65em;   //1040px
-$breakpoint-large: 80em;          //1280px
-$breakpoint-extra-large: 100em;   //1600px
+$breakpoint-extra-small     : 20em;       //320px
+$breakpoint-small-small     : 25em;       //400px
+$breakpoint-small           : 30em;       //480px
+$breakpoint-small-medium    : 37.500em;   //600px
+$breakpoint-medium          : 50em;       //800px
+$breakpoint-big-medium      : 58.750em;   //940px
+$breakpoint-extra-medium    : 65em;       //1040px
+$breakpoint-large           : 80em;       //1280px
+$breakpoint-extra-large     : 100em;      //1600px
 
 
 
@@ -18,12 +22,24 @@ $breakpoint-extra-large: 100em;   //1600px
     @media all and (max-width: $breakpoint-extra-small) {
       @content;
     }
+  } @else if $canvas == SS {
+    @media all and (max-width: $breakpoint-small-small) {
+      @content;
+    }
   } @else if $canvas == S {
     @media all and (max-width: $breakpoint-small) {
       @content;
     }
+  } @else if $canvas == SM {
+    @media all and (max-width: $breakpoint-small-medium) {
+      @content;
+    }
   } @else if $canvas == M {
     @media all and (max-width: $breakpoint-medium) {
+      @content;
+    }
+  } @else if $canvas == BM {
+    @media all and (max-width: $breakpoint-big-medium) {
       @content;
     }
   } @else if $canvas == XM {
@@ -68,5 +84,3 @@ $breakpoint-extra-large: 100em;   //1600px
 //     font-size: 125%;
 //   }
 // }
-
-//easy peasy!

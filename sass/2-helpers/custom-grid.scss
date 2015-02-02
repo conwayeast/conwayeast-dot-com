@@ -7,7 +7,7 @@
 
 .container {
   width: 100%;
-  padding: 4em 0;
+  padding: 2em 0;
   @include clearfix;
 }
 
@@ -34,7 +34,7 @@
 
 .container__one-half {
   @include span-columns(6);
-  @include MQ(M) {
+  @include MQ(XM) {
     @include span-columns(12);
   }
 }

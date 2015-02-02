@@ -13,8 +13,11 @@
   text-shadow: 1px 1px 1px $white;
   margin-top: 0;
   font-size: $base-font-size * 4; // h1 16 * 2.25 = 36px
+  @include MQ(M){
+    font-size: $base-font-size * 2.25;
+  }
   @include MQ(S){
-    font-size: 2.25em;
+    font-size: $base-font-size * 1.75;
   }
 }
 
@@ -23,7 +26,10 @@
   margin-top: 0;
   font-size: $base-font-size * 2; // h2 : 16 * 2 = 32px
   font-weight: bold;
+  @include MQ(M){
+    font-size: $base-font-size * 2.25;
+  }
   @include MQ(S){
-    font-size: 1.5em;
+    font-size: $base-font-size * 1;
   }
 }

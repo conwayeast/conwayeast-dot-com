@@ -1,119 +1,52 @@
-.navigation{
-  width: 100%;
-}
-
-// Mobile view
-$large-screen: em(860) !default;
-$horizontal-bar-mode: $large-screen;
-
-.navigation-menu-button {
-  color: blue;
-  display: block;
-  float: right;
-  font-weight: 700;
-  line-height: 1.5em;
-  margin: 0;
-  padding-right: 1em;
-  text-transform: uppercase;
-  @include media ($horizontal-bar-mode) {
-    display: none;
-  }
-  &:focus,
-  &:hover {
-    color: green;
+nav {
+  position: relative;
+  @include MQ(XM){
+    position: static;
   }
 }
 
 .navigation__list{
-  -webkit-transform-style: preserve-3d; // stop webkit flicker
-  clear: both;
-  display: none;
-  margin: 0 auto;
-  overflow: visible;
-  padding: 0;
-  width: 100%;
-  z-index: 9999;
-  &.show {
-    display: block;
-  }
-  @include media ($horizontal-bar-mode) {
-    display: inline;
-    margin: 0;
-    padding: 0;
+  position: absolute;
+  right: 0;
+  @include MQ(XM){
+    position: static;
+    text-align: center;
   }
 }
-
-// Nav menu
-
-nav {
-  float: none;
-  min-height: 3em;
-  z-index: 9999999;
-  @include media ($horizontal-bar-mode) {
-    float: left;
-  }
-}
-
-// ul.navigation-menu {
-//   -webkit-transform-style: preserve-3d; // stop webkit flicker
-//   clear: both;
-//   display: none;
-//   margin: 0 auto;
-//   overflow: visible;
-//   padding: 0;
-//   width: 100%;
-//   z-index: 9999;
-//   &.show {
-//     display: block;
-//   }
-//   @include media ($horizontal-bar-mode) {
-//     display: inline;
-//     margin: 0;
-//     padding: 0;
-//   }
-// }
 
 // The nav items
 
 .navigation__list--item {
-  background: green;
-  display: block;
-  line-height: 1.5em;
-  overflow: hidden;
-  padding-right: 0.8em;
-  text-align: right;
-  width: 100%;
-  z-index: 9999;
-  @include media ($horizontal-bar-mode) {
-    background: transparent;
-    display: inline;
-    line-height: 1.5em;
-    text-decoration: none;
-    width: auto;
+  display: inline-block;
+  line-height: 2em;
+  padding-right: 2em;
+  font-size: 1.5em;
+  &:last-child{
+    padding-right: 0em;
+  }
+  @include MQ(S){
+    font-size: 1.15em;
   }
 }
+
+// nav links
 
 .navigation__link {
-  color: blue;
-  display: inline-block;
-  font-weight: 400;
-  @include media ($horizontal-bar-mode) {
-    padding-right: 1em;
-  }
+  color: $white;
   &:focus,
   &:hover {
-    color: green;
+    color: $brick;
   }
 }
-.active-nav-item a {
-  border-bottom: 1px solid yellow;
-  padding-bottom: 3px;
+
+.logo__img{
+
 }
 
-// Elements on the far right
-
-.navigation-tools {
-  background: #505050;
-  clear: both;
-  display: block;
+.logo__link{
+  width: 100%;
+  line-height: 2em;
+  @include MQ(XM){
+    text-align: center;
+  }
 }

@@ -655,7 +655,7 @@ input[type="submit"] {
 
 .container, .container--fresh-mint, .container--black-coconut, .container--black-coconut--legal, .container--light-gray, .container--key-west, .container--purple, .container--yellow, .container--nopad, .container--nopadtop {
   width: 100%;
-  padding: 4em 0;
+  padding: 2em 0;
 }
 .container::after, .container--fresh-mint::after, .container--black-coconut::after, .container--black-coconut--legal::after, .container--light-gray::after, .container--key-west::after, .container--purple::after, .container--yellow::after, .container--nopad::after, .container--nopadtop::after {
   clear: both;
@@ -706,7 +706,7 @@ input[type="submit"] {
 .container__one-half:last-child, .container__one-half--last:last-child {
   margin-right: 0;
 }
-@media all and (max-width: 50em) {
+@media all and (max-width: 65em) {
   .container__one-half, .container__one-half--last {
     float: left;
     display: block;
@@ -878,6 +878,12 @@ input[type="submit"] {
 @media all and (max-width: 50em) {
   .container__newsletter {
     width: 97%;
+  }
+}
+
+@media all and (max-width: 37.5em) {
+  .container--form__search {
+    margin-bottom: 3em;
   }
 }
 
@@ -1091,110 +1097,60 @@ img {
   color: #003a69;
 }
 
-@media all and (max-width: 30em) {
-  .logo__img {
-    max-width: 60%;
-  }
-}
-
-.navigation {
-  width: 100%;
-}
-
-.navigation-menu-button {
-  color: blue;
-  display: block;
-  float: right;
-  font-weight: 700;
-  line-height: 1.5em;
-  margin: 0;
-  padding-right: 1em;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 53.75em) {
-  .navigation-menu-button {
-    display: none;
-  }
-}
-.navigation-menu-button:focus, .navigation-menu-button:hover {
-  color: green;
-}
-
-.navigation__list {
-  -webkit-transform-style: preserve-3d;
-  clear: both;
-  display: none;
-  margin: 0 auto;
-  overflow: visible;
-  padding: 0;
-  width: 100%;
-  z-index: 9999;
-}
-.navigation__list.show {
-  display: block;
-}
-@media screen and (min-width: 53.75em) {
-  .navigation__list {
-    display: inline;
-    margin: 0;
-    padding: 0;
-  }
+header {
+  background: #f4421a;
 }
 
 nav {
-  float: none;
-  min-height: 3em;
-  z-index: 9999999;
+  position: relative;
 }
-@media screen and (min-width: 53.75em) {
+@media all and (max-width: 65em) {
   nav {
-    float: left;
+    position: static;
+  }
+}
+
+.navigation__list {
+  position: absolute;
+  right: 0;
+}
+@media all and (max-width: 65em) {
+  .navigation__list {
+    position: static;
+    text-align: center;
   }
 }
 
 .navigation__list--item {
-  background: green;
-  display: block;
-  line-height: 1.5em;
-  overflow: hidden;
-  padding-right: 0.8em;
-  text-align: right;
-  width: 100%;
-  z-index: 9999;
+  display: inline-block;
+  line-height: 2em;
+  padding-right: 2em;
+  font-size: 1.5em;
 }
-@media screen and (min-width: 53.75em) {
+.navigation__list--item:last-child {
+  padding-right: 0em;
+}
+@media all and (max-width: 30em) {
   .navigation__list--item {
-    background: transparent;
-    display: inline;
-    line-height: 1.5em;
-    text-decoration: none;
-    width: auto;
+    font-size: 1.15em;
   }
 }
 
 .navigation__link {
-  color: blue;
-  display: inline-block;
-  font-weight: 400;
-}
-@media screen and (min-width: 53.75em) {
-  .navigation__link {
-    padding-right: 1em;
-  }
+  color: white;
 }
 .navigation__link:focus, .navigation__link:hover {
-  color: green;
+  color: #b73214;
 }
 
-.active-nav-item a {
-  border-bottom: 1px solid yellow;
-  padding-bottom: 3px;
+.logo__link {
+  width: 100%;
+  line-height: 2em;
 }
-
-.navigation-tools {
-  background: #505050;
-  clear: both;
-  display: block;
+@media all and (max-width: 65em) {
+  .logo__link {
+    text-align: center;
+  }
 }
 
 .hero {
@@ -1215,9 +1171,14 @@ nav {
   margin-top: 0;
   font-size: 5em;
 }
+@media all and (max-width: 50em) {
+  .hero__title {
+    font-size: 2.8125em;
+  }
+}
 @media all and (max-width: 30em) {
   .hero__title {
-    font-size: 2.25em;
+    font-size: 2.1875em;
   }
 }
 
@@ -1227,9 +1188,14 @@ nav {
   font-size: 2.5em;
   font-weight: bold;
 }
+@media all and (max-width: 50em) {
+  .hero__title__subhead {
+    font-size: 2.8125em;
+  }
+}
 @media all and (max-width: 30em) {
   .hero__title__subhead {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 }
 

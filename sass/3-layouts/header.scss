@@ -1,5 +1,9 @@
+header{
+  background: $red-orange;
+}
+
 .logo__img{
-  @include MQ(S){
-    max-width: 60%;
-  }
+  // @include MQ(XM){
+  //   max-width: 60%;
+  // }
 }
