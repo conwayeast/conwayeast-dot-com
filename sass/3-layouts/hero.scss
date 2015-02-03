@@ -12,24 +12,26 @@
 .hero__title {
   text-shadow: 1px 1px 1px $white;
   margin-top: 0;
-  font-size: $base-font-size * 4; // h1 16 * 2.25 = 36px
-  @include MQ(M){
+  font-size: $base-font-size * 3.5; // h1 16 * 2.25 = 36px
+  @include MQ(XM){
     font-size: $base-font-size * 2.25;
   }
-  @include MQ(S){
+  @include MQ(SM){
     font-size: $base-font-size * 1.75;
+    line-height: 140%;
   }
 }
 
 .hero__title__subhead {
   text-shadow: 1px 1px 1px $white;
   margin-top: 0;
-  font-size: $base-font-size * 2; // h2 : 16 * 2 = 32px
+  font-size: $base-font-size * 1.75; // h2 : 16 * 2 = 32px
   font-weight: bold;
-  @include MQ(M){
-    font-size: $base-font-size * 2.25;
+  @include MQ(XM){
+    font-size: $base-font-size * 1.25;
   }
-  @include MQ(S){
-    font-size: $base-font-size * 1;
+  @include MQ(BM){
+    font-size: $base-font-size;
+    line-height: 160%;
   }
 }

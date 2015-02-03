@@ -23,47 +23,74 @@
   <div class="container--nopad">
     <div class="container__centered">
       <h1 class="hero__title">Front End Development <br> &amp; Graphic Design</h1>
-      <p class="hero__title__subhead">A few reasons why this product is worth using, who it's for and why they need it.</p>
+      <p class="hero__title__subhead">Obessed with creating good user experiences, snowboarding and anything bacon related.</p>
+      <div class="btn-holder--content__callout">
+        <a class="btn--red-orange">Learn More About Me</a>
+      </div>
     </div>
   </div>
 </div>
 
 
-<!-- BULLETS -->
-<div class="container">
-  <div class="container__centered">
-    <ul class="bullets">
-      <li class="bullet three-col-bullet">
-        <div class="bullet-icon bullet-icon-1">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2.png
-    " alt="">
+<!-- INSTAGRAM -->
+
+<div class="content__callout">
+  <div class="content__callout__media">
+    <h2 class="content__callout__title">My Latest Instagram</h2>
+    <div class="content__callout__image-wrapper">
+      <div class="container__centered">
+        <div class="social__img">
+          <img src="http://scontent-a-lga.cdninstagram.com/hphotos-xaf1/t51.2885-15/10895335_1589603601275512_1175435413_n.jpg" alt="">
         </div>
-        <div class="bullet-content">
-          <h2>This Bullet Title</h2>
-          <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
-          </div>
-      </li>
-      <li class="bullet three-col-bullet">
-        <div class="bullet-icon bullet-icon-2">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3.png" alt="">
-        </div>
-        <div class="bullet-content">
-          <h2>Another Bullet Title</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
-        </div>
-      </li>
-      <li class="bullet three-col-bullet">
-        <div class="bullet-icon bullet-icon-3">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_4.png" alt="">
-        </div>
-        <div class="bullet-content">
-          <h2>Last Bullet Title</h2>
-          <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
-        </div>
-      </li>
-    </ul>
+      </div>
+    </div>
+  </div>
+  <div class="content__callout__content">
+    <div class="content__callout__body">
+      <p class="content__callout__body__text--large">I like to pretend I am a photographer.</p>
+      <div class="btn-holder--content__callout">
+        <a class="btn--red-orange">Follow Me on Instagram</a>
+      </div>
+    </div>
   </div>
 </div>
+
+<!-- CONTACT BUTTON -->
+
+<div class="container--key-west">
+  <div class="container__centered">
+    <div class="container__two-third">
+      <h3>Need help with a project?</h3>
+    </div>
+    <div class="container__one-third">
+      <a class="btn">Let's Get Started</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- DRIBBBLE -->
+<div class="content__callout">
+  <div class="content__callout__content">
+    <div class="content__callout__body">
+      <p class="content__callout__body__text--large">I like to pretend I am a designer.</p>
+      <div class="btn-holder--content__callout">
+        <a class="btn--red-orange">Follow Me on Dribbble</a>
+      </div>
+    </div>
+  </div>
+  <div class="content__callout__media--reverse">
+    <h2 class="content__callout__title">My Latest Dribbble</h2>
+    <div class="content__callout__image-wrapper">
+      <div class="container__centered">
+        <div class="social__img">
+          <img src="https://d13yacurqjgara.cloudfront.net/users/126415/screenshots/1009968/meditech25year.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- FOOTER -->
 <?php include("includes/footer.php"); ?>

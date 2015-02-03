@@ -1,0 +1,240 @@
+%bg-img-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+//*****************************************
+//
+// CONTENT CALLOUT - CONTAINER
+//
+//*****************************************
+
+.content__callout {
+  display: table;
+  width: 100%;
+  min-height: 350px;
+  position: relative;
+  border-top: 1px solid darken($light-gray, 15);
+  border-bottom: 1px solid darken($light-gray, 15);
+  background-color: $black-coconut;
+  @include MQ(M) {
+    position: static;
+    height: auto;
+  }
+}
+
+.content__callout.border-none {
+  border: none;
+}
+
+//*****************************************
+//
+// CONTENT CALLOUT - LEFT COLUMN
+// News, events, etc.
+//
+//*****************************************
+
+.content__callout__media {
+  display: table-cell;
+  width: 60%;
+  overflow: hidden;
+  position: relative;
+  @include MQ(M) {
+    width: 100%;
+    display: block;
+    position: static;
+  }
+}
+
+.content__callout__media--reverse {
+  @extend .content__callout__media;
+  // Triangle
+  &:after{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 50%;
+    left: 0em;
+    margin-top: -1.2em;
+    border-color: rgba(0,0,0,0);
+    border-left-color: $light-gray;
+    border-width: 1.2em 1.6em;
+    pointer-events: none;
+    @include MQ(M){
+      display: none;
+    }
+  }
+}
+
+.content__callout__bg__img {
+  position: relative;
+  @extend %bg-img-cover;
+  @include MQ(M) {
+    height: 20em;
+  }
+}
+
+.content__callout__title-wrapper {
+  position: absolute;
+  top: 5.2em;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  // Background Tranceparency for IE8
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#5c000000', endColorstr='#5c000000'); /* IE */
+  @include MQ(M) {
+    position: static;
+    margin-top: 4.5em;
+  }
+}
+
+.lt-ie9 .content__callout__title-wrapper {
+  top: 25px;
+}
+
+.content__callout__title {
+  margin: 0;
+  text-align: center;
+  padding: 1em 0.5em 0.5em 0.5em;
+  color: $white;
+  text-shadow: 1px 1px 1px $black-coconut;
+}
+
+.content__callout__subtitle {
+  margin-top: 0;
+  text-align: center;
+  color: $white;
+  text-shadow: 1px 1px 1px $black-coconut;
+  padding-bottom: 1.2em;
+}
+
+
+//*****************************************
+//
+// CONTENT CALL SECTION w/ VIDEO
+//
+//*****************************************
+
+.content__callout__image-wrapper {
+  padding-bottom: 2em;
+  max-width: 85%;
+  margin: 0 auto;
+  line-height: 0;
+  @include MQ(M){
+    padding-bottom: 0;
+    margin-bottom: 3em;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.content__callout__img {
+    width: 100%;
+}
+
+.content__callout__body__text--large{
+  font-size: 1.4em;
+}
+
+//*****************************************
+//
+// CONTENT CALLOUT - RIGHT COLUMN
+//
+//*****************************************
+
+// Container
+.content__callout__content {
+  display: table-cell;
+  padding: 1em 4%;
+  vertical-align: middle;
+  width: 40%;
+  background-color: $light-gray;
+  position: relative;
+  @include MQ(M){
+    padding: 4%;
+    width: 26em;
+    margin-top: 0;
+    width: 100%;
+    display: block;
+    position: static;
+  }
+  // Triangle
+  &:after{
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 50%;
+    left: -3.12em;
+    margin-top: -1.2em;
+    border-color: rgba(0,0,0,0);
+    border-right-color: $light-gray;
+    border-width: 1.2em 1.6em;
+    pointer-events: none;
+  }
+}
+
+.content__callout__content-orange{
+  @extend .content__callout__content;
+  background-color: $orange;
+}
+
+.content__callout__content-black-coconut{
+  @extend .content__callout__content;
+  background-color: $black-coconut;
+  &:after {
+      border-right-color: $black-coconut;
+
+  }
+}
+
+.lt-ie9 .content__callout__content {
+  padding-right: 6em;
+}
+
+.btn-holder{
+  text-align: center;
+}
+
+.btn-holder--content__callout{
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.content__callout__checkbox__list{
+  list-style-type:none;
+  display: inline-block;
+}
+
+.content__callout__checkbox__icon{
+  color:#0095C3;
+  margin-left: 2.4em;
+}
+
+.content__callout__checkbox__text{
+  color:#fff;
+  margin-left: 2em;
+  padding-top: .4em;
+}
+
+.green {
+  color: #4BC8B6;
+}
+
+
+.social__img{
+  text-align: center;
+  img{
+    max-width: 73%;
+    @include MQ(BM){
+      max-width: 100%;
+    }
+  }
+}

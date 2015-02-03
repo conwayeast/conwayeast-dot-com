@@ -24,13 +24,13 @@
   }
 }
 
-.btn--orange {
+.btn--red-orange {
   @extend .btn;
-  border: 1px solid $orange;
-  background-color: $orange;
+  border: 1px solid $red-orange;
+  background-color: $red-orange;
   &:hover {
-    background: darken($orange,10);
-    border: 1px solid darken($orange,10);
+    background: darken($red-orange,10);
+    border: 1px solid darken($red-orange,10);
   }
 }
 
@@ -82,13 +82,13 @@
  @extend .btn;
 }
 
-.btn--newsletter {
-  @extend .btn--orange;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 33.33334%;
-}
+// .btn--newsletter {
+//   @extend .btn--orange;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   width: 33.33334%;
+// }
 
 .btn--accordion {
   display: inline-block;
