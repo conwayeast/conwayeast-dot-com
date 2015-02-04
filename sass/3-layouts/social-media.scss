@@ -1,0 +1,34 @@
+.social-media__list{
+	list-style-type: none;
+	//display: inline-block;
+	padding-left: 0;
+	text-align: center;
+	@include MQ(XM){
+		margin-top: 1em;
+	}
+}
+
+.social-media__list__item{
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.social-media__list__item a[target="_blank"]:after{
+  content: "";
+}
+
+.social-media__list__item--last{
+	@extend .social-media__list__item;
+	margin-right: 0;
+}
+
+.social-media__link{
+	color: $key-west;
+	&:hover{
+		color: $blueberry;
+	}
+}
+
+.social-media__link:after{
+	content: " ";
+}

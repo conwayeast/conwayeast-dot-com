@@ -2,36 +2,50 @@
    Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
 </div>-->
 
-<footer class="footer-2" role="contentinfo">
-<div class="container">
+<footer role="contentinfo">
   <div class="container__centered">
-    <div class="footer-logo">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+    <div class="container__one-half">
+      <nav role="navigation">
+        <ul class="footer__list">
+          <li class="footer__list--item"><a class="footer__link" href="#">About</a></li>
+          <li class="footer__list--item"><a class="footer__link" href="#">Portfolio</a></li>
+          <li class="footer__list--item"><a class="footer__link" href="contact.php">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-      <ul>
-        <li><a href="javascript:void(0)">About</a></li>
-        <li><a href="javascript:void(0)">Contact</a></li>
-        <li><a href="javascript:void(0)">Products</a></li>
-      </ul>
-
-      <div class="footer-secondary-links">
-        <ul>
-          <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-          <li><a href="javascript:void(0)">Privacy Policy</a></li>
+    <div class="container__one-half--last">
+      <nav role="navigation">
+        <ul class="social-media__list">
+          <li class="social-media__list__item">
+            <a class="social-media__link" href="https://twitter.com/conwayeast" target="_blank">
+              <i class="fa fa-twitter-square fa-3x"></i>
+            </a>
+          </li>
+          <li class="social-media__list__item">
+            <a class="social-media__link" href="http://www.linkedin.com/pub/ryan-conway/9/a37/660/en" target="_blank">
+              <i class="fa fa-linkedin-square fa-3x"></i>
+            </a>
+          </li>
+          <li class="social-media__list__item">
+            <a class="social-media__link" href="http://instagram.com/conwayeast/" target="_blank">
+              <i class="fa fa-instagram fa-3x"></i>
+            </a>
+          </li>
+          <li class="social-media__list__item">
+            <a class="social-media__link" href="https://github.com/conwayeast" target="_blank">
+              <i class="fa fa-github-square fa-3x"></i>
+            </a>
+          </li>
+          <li class="social-media__list__item--last">
+            <a class="social-media__link" href="https://dribbble.com/conwayeast" target="_blank">
+              <i class="fa fa-dribbble fa-3x"></i>
+            </a>
+          </li>
         </ul>
-
-        <ul class="footer-social">
-          <li><a href="javascript:void(0)">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
-            </a></li>
-          <li><a href="javascript:void(0)">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
-          </a></li>
-          <li><a href="javascript:void(0)">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
-          </a></li>
-        </ul>
-      </div>
+      </nav>
     </div>
   </div>
 </footer>
+
+</body>
+</html>

@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <link rel="stylesheet" href="css/main.css">
-  <!-- <link rel="stylesheet" href="css/styles.css"> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="//use.typekit.net/cdt3wla.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-  <!--  <script src="scripts/responsive-nav.js"></script>-->
-</head>
-<body>
-
-
-<!-- NAV -->
 <?php include("includes/header.php"); ?>
 
 <!-- HERO -->
@@ -94,32 +77,3 @@
 
 <!-- FOOTER -->
 <?php include("includes/footer.php"); ?>
-
-
-
-
-
-
-<script>
-  $(document).ready(function() {
-  var menuToggle = $('#js-mobile-menu').unbind();
-  $('#js-navigation-menu').removeClass("show");
-
-  menuToggle.on('click', function(e) {
-    e.preventDefault();
-    $('#js-navigation-menu').slideToggle(function(){
-      if($('#js-navigation-menu').is(':hidden')) {
-        $('#js-navigation-menu').removeAttr('style');
-      }
-    });
-  });
-});
-
-</script>
-
-<!-- <script src="scripts/fastclick.js"></script>
-<script src="scripts/scroll.js"></script>
-<script src="scripts/fixed-responsive-nav.js"></script> -->
-
-</body>
-</html>

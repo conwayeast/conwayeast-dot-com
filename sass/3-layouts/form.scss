@@ -1,0 +1,313 @@
+//*****************************************
+//
+// GENERAL FORM STYLES
+//
+//*****************************************
+
+label,
+input,
+select {
+ font-family: $sans-serif;
+}
+
+input,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="search"]{
+  padding: 1em .5em;
+  color: $black-coconut;
+  border: 1px solid lighten($black-coconut, 25);
+  outline: transparent;
+  box-shadow: none;
+  transition: box-shadow .4s, border .4s;
+  background: transparent;
+  -webkit-appearance: none;
+  border-radius: 0;
+  &:hover {
+    transition:box-shadow .2s, border .2s;
+  }
+  &:focus {
+    background: $white;
+    color: $black-coconut;
+    border: 1px solid $black-coconut;
+    transition: box-shadow .8s;
+  }
+}
+
+textarea {
+  border: 1px solid lighten($black-coconut, 20);
+  -webkit-appearance: none;
+  border-radius: 0;
+  outline: 0;
+  &:hover {
+    border: 1px solid lighten($black-coconut, 20);
+  }
+  &:active {
+    border: 1px solid $black-coconut;
+    border-bottom: 4px $black-coconut;
+  }
+}
+
+// Placeholder
+$placeholdertext-color : lighten($black-coconut, 50);
+
+input,
+input.form__input,
+input.form__input[type="text"],
+textarea.form__textarea {
+  &::-webkit-input-placeholder {
+     color: $placeholdertext-color;
+  }
+  &:-moz-placeholder {
+     color: $placeholdertext-color;
+  }
+  &::-moz-placeholder {
+     color: $placeholdertext-color;
+  }
+  &:-ms-input-placeholder {
+     color: $placeholdertext-color;
+  }
+}
+
+select.form__input {
+  color: $placeholdertext-color;
+}
+
+//*****************************************
+//
+// CONTACT FORM STYLES
+//
+//*****************************************
+
+.contactform {
+}
+
+.contactform__supportingtext {
+  text-align: center;
+}
+
+.contactform__supportingtext__title {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.contactform__phonenumber {
+  color: $light-gray;
+  border-bottom: 1px solid darken($fresh-mint, 10);
+  margin-left: .2rem;
+}
+
+.form {
+  @include outer-container;
+  color: #000;
+  max-width: 60%;
+  padding: 2em 0em;
+  @include MQ(M){
+    max-width: 100%;
+  }
+}
+
+.form__title {
+  color: $black-coconut;
+  margin-top: 0;
+}
+
+.form__label {
+  color: lighten($black-coconut,20);
+  line-height: 1.5;
+  font-size: 1.3em;
+}
+
+input.form__input,
+input.form__input[type="text"],
+input.form__input[type="email"],
+input.form__input[type="tel"],
+.form__input--select {
+  font-size: .8em;
+  padding: 1em 1em 1em 2.5em;
+  height: 58px;
+  border: 1px solid lighten($black-coconut, 25);
+  outline: transparent;
+  -webkit-border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0px;
+  width: 100%;
+  background: $white;
+  &:hover{
+    box-shadow: inset lighten($black-coconut, 60) 0 -.2em 0 0;
+  }
+  &:focus {
+    box-shadow: inset $key-west 0 -.2em 0 0;
+  }
+  overflow: hidden;
+  position: relative;
+}
+
+
+#name,
+#email,
+#message {
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+}
+
+#name{
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+}
+
+#email{
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+}
+
+#message{
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+}
+
+textarea.form__textarea {
+  @extend input.form__input;
+  min-height: 15.6em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+// Default select if there is no javascript
+select.form__input {
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  outline: transparent;
+  -webkit-border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+// Hide and overlay select when javaScript is enabled
+.js .form__input--select select.form__input {
+  padding: 1em .5em;
+  height: 58px;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  outline: transparent;
+  -webkit-border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0px;
+  left: 0;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  outline: 0;
+}
+
+// Adds arrow to the select box
+
+.js .form__input--select::after {
+  border-left: 0.375em solid transparent;
+  border-right: 0.375em solid transparent;
+  border-top: 0.375em solid lighten($black-coconut, 30);
+  content: '';
+  float: right;
+  height: 0;
+  margin-top: -0.1875em;
+  position: absolute;
+  right: 0.75em;
+  top: 50%;
+  width: 0;
+}
+
+// Focus State of the select
+
+.js .form__input--select.focus {
+  &::after {
+    border-top: 0.375em solid $black-coconut;
+  }
+}
+
+// Select options
+
+select.form__input option {
+  color: $black-coconut;
+}
+
+input[type="file"].form__input {
+  border: 1px solid lighten($black-coconut, 25);
+  padding: 0.9em 0.5em;
+  &:hover{
+    background: transparent;
+    box-shadow: none;
+    // border:none;
+  }
+  &:focus{
+    background: transparent;
+    border: 1px solid $black-coconut;
+    box-shadow: none;
+  }
+}
+
+
+
+
+//*****************************************
+//
+// SEARCH FORM
+//
+//*****************************************
+
+.form__search {
+  width: 100%;
+  position: relative;
+}
+
+.form__search__input,
+.form__search__input[type="text"],
+.form__search__input[type="search"] {
+  margin-bottom: 0;
+}
+
+.form__search__button {
+  @extend .btn--key-west;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+//*****************************************
+//
+// NEWSLETTER
+//
+//*****************************************
+
+.newsletter__title {
+  color: $light-gray;
+  margin-top: 0;
+}
+
+.form__newsletter {
+  @extend .form__search;
+}
+
+.form__newsletter input {
+  @extend .form__search__input;
+  background-color: $light-gray;
+  border: 1px solid $light-gray;
+  &:hover,  &:active, &:focus {
+    border: 1px solid $white;
+    background-color: $white;
+  }
+}
