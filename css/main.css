@@ -2994,6 +2994,10 @@ input[type="submit"] {
   }
 }
 
+.container__portfolio {
+  text-align: center;
+}
+
 .container--fresh-mint {
   background-color: #4bc8b6;
 }
