@@ -1,6 +1,5 @@
-<?php include("includes/header.php"); ?>
 
-<section class="container__centered contactform">
+<section id="contact" class="container__centered contactform">
   <h2>Contact Me</h2>
   <form class="form">
     <label class="form__label">Name
@@ -19,5 +18,3 @@
   </form>
 </section>
 
-<!-- FOOTER -->
-<?php include("includes/footer.php"); ?>

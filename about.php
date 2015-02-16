@@ -1,5 +1,3 @@
-<?php include("includes/header.php"); ?>
-
 
 <div class="container" style="
 background: url('img/7587626384_0454adb72a_h.jpg');
@@ -14,25 +12,40 @@ min-height: 20em;
   </div>
 </div>
 
-<div class="container">
+<div id="about" class="container">
   <div class="container__centered">
-    <p>For the past decade I've been crafting user-centered design experiences for the web. I specialize in responsive front-end design, HTML/CSS and web typography. Some other areas of expertise are creative direction/art direction, interface design, prototyping, concepting, mobile/app design and more. Most days I work with pixels, grids, typography, colors and lines of code. Currently I work at ebay as a UX Designer. Previously at GM and Dell.</p>
+    <div class="container__one-half">
 
-    <p>I'm always interested in freelance opportunities, so don't hesitate to contact me if you are looking to fill a spot or need help with a project.</p>
+      <p>With a background in business, sales and marketing.</p>
 
-    <p>Known by friends as A.J., you can find me elsewhere on the web: view my Dribbble shots, follow me on Twitter, I post internet findings on Gimmebar, I take photos on Instagram and listens to music on Rdio.</p>
+      <p>I have a passion for simple interfaces. I also love coding, snowboarding, drinking craft beer, and eating bacon. Sometimes if I'm lucky I do it all in the same day.</p>
 
-    <p>Hi I'm Tony Headrick, a Midwest based branding, graphic and web designer located in Fort Wayne, Indiana. I enjoy partnering with local small-to-medium size businesses to help take their business in a new and bright direction. Whether it be a new logo, a fresh web design, or a complete website overhaul; I have the proven experience to deliver the results local businesses need to grow.</p>
+      <p>I enjoy crafting responsive websites focusing on the user experience. Most days I work with grids, typography, colors and lines of code. The ultimate goal is simplicity with a gimmick free focus on content and concise communication.</p>
 
-    <p>Since 2006, I have partnered with such local companies as The Ginger Kitchen, Gravity Music, The League for The Blind and Disabled, Aging and In-Home Services and The Fort Wayne Derby Girls. I strive to keep the process accurate and simple by putting the client and their target market first. I am committed to staying on top of trends, best practices, and regional needs. I strive to come up with unique solutions that work for my clients.</p>
+      <p>I have the experience to deliver results, and I strive to keep the process accurate and simple by putting the user first. I am committed to staying on top of trends and best practices, and strive to come up with unique solutions.</p>
 
-    <p>My focus is simple: to partner with individuals and companies that are ready for a positive and measurable change.</p>
+      <p>I'm always interested in freelance opportunities, so don't hesitate to contact me if you are looking to fill a spot or need help with a project.</p>
 
-    <p>If you or your company have questions, or have a project in mind that I can lend my skills to, please don't hesitate to reach out.</p>
+      <p>Other places you can find me on the web:</p>
+        <ul>
+          <li>Twitter</li>
+          <li>LinkedIn</li>
+          <li>Instagram</li>
+          <li>Github</li>
+          <li>Dribbble</li>
+          <li>Rdio</li>
+        </ul>
 
-    <p>I look forward to working with you to help your business grow and leave a lasting impression on your targeted market.</p>
+      <a href="../RyanConwayResume/index.html" class="btn">See My Resume</a>
 
-    <p>simplicity and typography with a gimmick free focus on content and concise communication.</p>
+    </div>
+
+
+
+    <div class="container__one-half--last">
+      <img src="https://www.evernote.com/shard/s226/res/9cf64d55-7a5c-4f09-8eaa-7a4ee9bab5a6/197962_10100444813392334_1055797494_n.jpg?search=snow&resizeSmall&width=1137" alt="">
+    </div>
+
   </div>
 </div>
 

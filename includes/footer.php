@@ -1,15 +1,11 @@
-<!--<div class="wrapper-for-content-outside-of-footer">
-   Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
-</div>-->
-
 <footer role="contentinfo">
   <div class="container__centered">
     <div class="container__one-half">
       <nav role="navigation">
         <ul class="footer__list">
-          <li class="footer__list--item"><a class="footer__link" href="#">About</a></li>
-          <li class="footer__list--item"><a class="footer__link" href="#">Portfolio</a></li>
-          <li class="footer__list--item"><a class="footer__link" href="contact.php">Contact</a></li>
+          <li class="footer__list--item"><a class="footer__link" href="#about">About</a></li>
+          <li class="footer__list--item"><a class="footer__link" href="#portfolio">Portfolio</a></li>
+          <li class="footer__list--item"><a class="footer__link" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -46,6 +42,25 @@
     </div>
   </div>
 </footer>
+
+<script>
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+</script>
 
 </body>
 </html>

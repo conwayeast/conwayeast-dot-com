@@ -1,6 +1,5 @@
-<?php include("includes/header.php"); ?>
 
-<div class="container" style="background: wheat;">
+<div id="portfolio" class="container" style="background: wheat;">
   <article class="container__centered">
     <div class="container__portfolio">
       <img src="img/vanoriola.png" alt="">
@@ -44,7 +43,3 @@
   </article>
 </div>
 
-
-
-<!-- FOOTER -->
-<?php include("includes/footer.php"); ?>

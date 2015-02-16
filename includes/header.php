@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/main.css">
   <script src="//use.typekit.net/cdt3wla.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 
@@ -23,9 +25,9 @@
     <div class="container__one-half--last">
       <nav role="navigation">
         <ul class="navigation__list">
-          <li class="navigation__list--item"><a class="navigation__link" href="about.php">About</a></li>
-          <li class="navigation__list--item"><a class="navigation__link" href="portfolio.php">Portfolio</a></li>
-          <li class="navigation__list--item"><a class="navigation__link" href="contact.php">Contact</a></li>
+          <li class="navigation__list--item"><a class="navigation__link" href="#portfolio">Portfolio</a></li>
+          <li class="navigation__list--item"><a class="navigation__link" href="#about">About</a></li>
+          <li class="navigation__list--item"><a class="navigation__link" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>

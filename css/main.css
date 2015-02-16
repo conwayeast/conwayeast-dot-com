@@ -3967,3 +3967,54 @@ footer {
     max-width: 100%;
   }
 }
+
+.scrolldown {
+  padding: 1em;
+  text-align: center;
+  z-index: 100;
+}
+.scrolldown p {
+  font: 700 0.7em/1em news-gothic-std,sans-serif;
+  letter-spacing: 1px;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  -moz-animation-name: scroll;
+  animation-name: scroll;
+  color: #000;
+  text-transform: uppercase;
+  text-indent: 1px;
+}
+
+.mouse {
+  border: 2px solid #000;
+  border-radius: 13px;
+  display: block;
+  height: 46px;
+  margin: 0 auto;
+  width: 26px;
+}
+.mouse span {
+  display: block;
+  font-size: 1.5em;
+  margin: 6px auto;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}

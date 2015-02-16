@@ -2,3 +2,44 @@
 @import '1-base/base-dir';
 @import '2-helpers/helpers-dir';
 @import '3-layouts/layouts-dir';
+
+.scrolldown {
+  padding: 1em;
+  text-align: center;
+  z-index: 100;
+  p {
+    font: 700 0.7em/1em news-gothic-std,sans-serif;
+    letter-spacing: 1px;
+    @include animation-duration(2s);
+    @include animation-fill-mode(both);
+    @include animation-iteration-count(infinite);
+    @include animation-name(scroll);
+    color: #000;
+    text-transform: uppercase;
+    text-indent: 1px;
+  }
+}
+.mouse {
+  border: 2px solid #000;
+  border-radius: 13px;
+  display: block;
+  height: 46px;
+  margin: 0 auto;
+  width: 26px;
+  span {
+    display: block;
+    font-size: 1.5em;
+    margin: 6px auto;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
