@@ -9,6 +9,10 @@
   <script>try{Typekit.load();}catch(e){}</script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/jquery.sticky-kit.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="js/example.js" type="text/javascript" charset="utf-8" async defer></script>
+
+
 </head>
 <body>
 

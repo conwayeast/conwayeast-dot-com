@@ -62,5 +62,43 @@ $(function() {
 
 </script>
 
+<!--<script>
+$(function(){
+
+  var formTop = $('.container__portfolio--sidebar').offset().top;
+
+   $(window).scroll(function(){
+
+     var windowTop = $(window).scrollTop();
+     var formWidth = $('.container__portfolio--sidebar').width();
+     var fluidVal = ( formWidth/$(window).width() ) * 100
+     if (formTop < windowTop) {
+       $('.container__portfolio--sidebar__header').css({
+        position: 'fixed',
+         top: 300,
+         width: fluidVal + "%",
+         transform: "translateY(25px)",
+         transform: "rotate(270deg)"
+       });
+     } else {
+       $('.container__portfolio--sidebar__header').css({
+         position: 'static',
+         width: '100%',
+         transform: "translateY(0px)"
+       });
+     }
+
+   });
+ });
+</script>-->
+
+<script>
+$(window).scroll(function() {
+    $(".portfolio--sidebar__header").css({
+    'opacity' : 1-(($(this).scrollTop())/4500)
+    });
+});
+</script>
+
 </body>
 </html>

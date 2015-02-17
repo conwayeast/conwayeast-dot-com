@@ -1,21 +1,23 @@
+<div id="about"></div>
 
-<div class="container" style="
-background: url('img/7587626384_0454adb72a_h.jpg');
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-min-height: 20em;
-">
-  <div class="container__centered" style="text-align:center; padding: 3em 1em;">
-    <h2 class="white">Ryan Conway</h2>
+  <div class="container" style="
+  background: url('img/7587626384_0454adb72a_h.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 20em;
+  z-index: 3;
+  ">
+    <div class="container__centered" style="text-align:center; padding: 3em 1em;">
+      <h2 class="white">Ryan Conway</h2>
+    </div>
   </div>
-</div>
 
-<div id="about" class="container">
+<div class="container">
+
   <div class="container__centered">
     <div class="container__one-half">
-
       <p>With a background in business, sales and marketing.</p>
 
       <p>I have a passion for simple interfaces. I also love coding, snowboarding, drinking craft beer, and eating bacon. Sometimes if I'm lucky I do it all in the same day.</p>
@@ -40,14 +42,10 @@ min-height: 20em;
 
     </div>
 
-
-
     <div class="container__one-half--last">
-      <img src="https://www.evernote.com/shard/s226/res/9cf64d55-7a5c-4f09-8eaa-7a4ee9bab5a6/197962_10100444813392334_1055797494_n.jpg?search=snow&resizeSmall&width=1137" alt="">
+      <img src="img/RyanSnowboardingLoon.jpg" alt="">
     </div>
 
   </div>
 </div>
 
-<!-- FOOTER -->
-<?php include("includes/footer.php"); ?>
