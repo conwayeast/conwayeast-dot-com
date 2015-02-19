@@ -16,6 +16,8 @@
 </head>
 <body>
 
+<div id="backToTop"></div>
+
 <!-- NAV -->
 <header class="container" role="banner">
   <div class="container__centered">

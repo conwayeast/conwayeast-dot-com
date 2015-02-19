@@ -121,14 +121,16 @@
   background-color: $key-west;
 }
 
-.container--purple {
+.container--red-orange{
   @extend .container;
-  background-color: $purple;
+  background-color: $red-orange;
+  color: $white;
 }
 
-.container--yellow {
+
+.container--wheat{
   @extend .container;
-  background-color: $yellow;
+  background-color: $wheat;
 }
 
 //*****************************************

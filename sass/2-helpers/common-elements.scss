@@ -87,9 +87,9 @@ img {
 //
 //*****************************************
 
-// .page__title {
-//   margin-top: 0;
-// }
+.page__title {
+  margin-top: 0;
+}
 
 // .page__title--main {
 //   @extend .page__title;
@@ -97,23 +97,23 @@ img {
 //   margin: 0;
 // }
 
-// .page__title--center {
-//   @extend .page__title;
-//   display: block;
-//   text-align: center;
-// }
+.page__title--center {
+  @extend .page__title;
+  display: block;
+  text-align: center;
+}
 
-// .page__title__ribbon {
-//   display: inline-block;
-//   width: 4em;
-//   height: 10px;
-//   background-color: $fresh-mint;
-// }
+.page__title__ribbon {
+  display: inline-block;
+  width: 4em;
+  height: 10px;
+  background-color: $white;
+}
 
-// .page__title__ribbon--black-coconut{
-//   @extend .page__title__ribbon;
-//   background-color: $white;
-// }
+.page__title__ribbon--black-coconut{
+  @extend .page__title__ribbon;
+  background-color: $black-coconut;
+}
 
 // .page__title__ribbon--blueberry{
 //   @extend .page__title__ribbon;

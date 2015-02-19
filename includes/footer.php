@@ -6,6 +6,7 @@
           <li class="footer__list--item"><a class="footer__link" href="#about">About</a></li>
           <li class="footer__list--item"><a class="footer__link" href="#portfolio">Portfolio</a></li>
           <li class="footer__list--item"><a class="footer__link" href="#contact">Contact</a></li>
+          <li class="footer__list--item"><a class="footer__link" href="#backToTop">Back To Top</a></li>
         </ul>
       </nav>
     </div>

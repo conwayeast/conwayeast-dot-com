@@ -9,13 +9,13 @@
   padding: 1em 1.5em;
   cursor: pointer;
   color: $white;
-  border: 1px solid $key-west;
-  background: $key-west;
+  border: 1px solid $red-orange;
+  background: $red-orange;
   @include transition (background .6s ease-in-out, border .6s ease-in-out);
   &:hover {
     color: $white;
-    background: $blueberry;
-    border: 1px solid $blueberry;
+    background: $brick;
+    border: 1px solid $brick;
     @include transition (background .6s ease-in-out, border .6s ease-in-out);
   }
   &:active {
@@ -31,16 +31,6 @@
   &:hover {
     background: darken($red-orange,10);
     border: 1px solid darken($red-orange,10);
-  }
-}
-
-.btn--key-west {
-  @extend .btn;
-  border: 1px solid $key-west;
-  background: $key-west;
-  &:hover {
-    background: $blueberry;
-    border: 1px solid $blueberry;
   }
 }
 
@@ -68,7 +58,7 @@
 
 .btn--form {
   @extend .btn__link--full-width;
-  @extend .btn--key-west;
+  @extend .btn;
   margin-top: 2.3em;
   margin-bottom: 0;
   height: 58px;
@@ -90,14 +80,14 @@
 //   width: 33.33334%;
 // }
 
-.btn--accordion {
-  display: inline-block;
-  padding: 0.3em 1.7em;
-  background: $key-west;
-  font-size: .8em;
-  color: $white;
-  margin-top: 1.7em;
-}
+// .btn--accordion {
+//   display: inline-block;
+//   padding: 0.3em 1.7em;
+//   background: $key-west;
+//   font-size: .8em;
+//   color: $white;
+//   margin-top: 1.7em;
+// }
 
 .btn--search {
   display: block;

@@ -140,7 +140,7 @@ input.form__input[type="tel"],
     box-shadow: inset lighten($black-coconut, 60) 0 -.2em 0 0;
   }
   &:focus {
-    box-shadow: inset $key-west 0 -.2em 0 0;
+    box-shadow: inset $brick 0 -.2em 0 0;
   }
   overflow: hidden;
   position: relative;
@@ -281,7 +281,7 @@ input[type="file"].form__input {
 }
 
 .form__search__button {
-  @extend .btn--key-west;
+  @extend .btn;
   position: absolute;
   top: 0;
   right: 0;
