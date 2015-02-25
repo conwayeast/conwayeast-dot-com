@@ -30,6 +30,46 @@
 
 
     <!-- <div class="container__one-half"> -->
+
+      <p>Keep it simple.</p>
+
+      <p>Sometimes simple is hard.</p>
+
+      <p>Let's stop hiding content.</p>
+
+      <p>make websites work better on phones.</p>
+
+      <p>Let it breathe.</p>
+
+      <p>Make it big.</p>
+
+      <p>Colors, Lines, Shapes.</p>
+
+      <p>Loves fresh powder and crispy bacon.</p>
+
+      <p>The shortest distance between two points may not always be the fastest.</p>
+
+      <p>Define new processes. Try to fix broken systems</p>
+
+      <p>WordPress tinkerer</p>
+
+      <p>Small business lover</p>
+
+      <p>understanding the message and helping to tell a compelling story</p>
+
+      <p>Dreamer</p>
+      <p>Let's dream together</p>
+
+      <p>Thinker</p>
+
+      <p>Designer</p>
+
+      <p>Thinker. Beer buff. Proud webaholic. Organizer. Hardcore food practitioner.</p>
+
+      <p>UX/UI Designer, snowboarder, dog lover &amp; craft beer drinker.</p>
+
+      <p>Passionate about Design, Snowboards, Beer, Bacon &amp; Badge Hunting.</p>
+
       <p>With a background in business, sales and marketing.</p>
 
       <p>I have a passion for simple interfaces. I also love coding, snowboarding, drinking craft beer, and eating bacon. Sometimes if I'm lucky I do it all in the same day.</p>
